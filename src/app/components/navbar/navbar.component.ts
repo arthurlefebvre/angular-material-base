@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class NavbarComponent implements OnInit {
   constructor() {}
-  title: string = "Douanes";
+  title: string = "AppTitle";
   opened: boolean = true;
 
   folders: any[] = [
