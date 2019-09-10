@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import {
   BreakpointObserver,
   Breakpoints,
@@ -16,7 +16,8 @@ export class NavbarComponent implements OnInit {
     Breakpoints.Handset
   );
   constructor(private breakpointObserver: BreakpointObserver) {}
-  title: string = "AppTitle";
+
+  @Input() title: string = "AppTitle";
 
   ngOnInit() {}
 }
