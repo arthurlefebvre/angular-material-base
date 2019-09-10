@@ -10,9 +10,9 @@
   >
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLinkActive="active" routerLink="home">Link 1</a>
+      <a mat-list-item routerLinkActive="active" routerLink="home">Link 2</a>
+      <a mat-list-item routerLinkActive="active" routerLink="home">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -26,12 +26,18 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu </mat-icon>
       </button>
-      <button mat-button>{{ title }}</button>
+      <button mat-button routerLink="">{{ title }}</button>
       <span class="spacer"></span>
       <div *ngIf="!(isHandset | async)!.matches">
-        <button mat-button>Link</button>
-        <button mat-button>Link</button>
-        <button mat-button>Link</button>
+        <button mat-button routerLinkActive="active" routerLink="home">
+          Link
+        </button>
+        <button mat-button routerLinkActive="active" routerLink="home">
+          Link
+        </button>
+        <button mat-button routerLinkActive="active" routerLink="home">
+          Link
+        </button>
       </div>
     </mat-toolbar>
     <ng-content></ng-content>

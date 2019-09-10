@@ -25,9 +25,7 @@ mat-toolbar a {
   color: white;
   text-decoration: none;
 }
-/*
-@media (min-width: 768px) {
-  .sidenav {
-    display: none;
-  }
-} */
+
+.active {
+  text-decoration: underline;
+}
